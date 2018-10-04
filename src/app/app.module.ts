@@ -9,12 +9,14 @@ import { MatButtonModule, MatSidenavModule, MatListModule } from '@angular/mater
 import { AppComponent } from './app.component';
 import { BackgroundCoverComponent } from './background-cover/background-cover.component';
 import { HeaderComponent } from './header/header.component';
+import { BodyComponent } from './body/body.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BackgroundCoverComponent,
     HeaderComponent,
+    BodyComponent,
   ],
   imports: [
     BrowserAnimationsModule,
