@@ -4,7 +4,10 @@
 //@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body {
+$header-height: 64px;
+
+* {
   margin: 0;
+  padding: 0;
 }
 
