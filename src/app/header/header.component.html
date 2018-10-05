@@ -1,13 +1,39 @@
 <mat-toolbar
-  (window:scroll)="onWindowScroll($event)"
-  [class.mat-primary]="this.colorHeader">
-    <button mat-button>Rug.al</button>
-    <nav class="nav">
-      <button mat-button>About</button>
-      <button mat-button>Category</button>
-      <button mat-button>Tag</button>
-      <button mat-button>Archive</button>
-    </nav>
-  <!--</div>-->
+     (window:scroll)="onWindowScroll($event)"
+     [class.mat-primary]="this.colorHeader">
+  <button mat-button>Rug.al</button>
+  <nav>
+    <button mat-button>About</button>
+    <button mat-button>Category</button>
+    <button mat-button>Tag</button>
+    <button mat-button>Archive</button>
+  </nav>
+  <div id="header-burger">
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu
+      color="primary"
+      #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>About</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Category</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Tag</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Archive</span>
+      </button>
+    </mat-menu>
+  </div>
 </mat-toolbar>
 

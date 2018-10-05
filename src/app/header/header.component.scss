@@ -17,5 +17,17 @@ mat-toolbar > .mat-button {
 
 nav {
   float: right;
+
+  @media only screen and (max-width: 560px) {
+    display: none;
+  }
+}
+
+#header-burger {
+  display: none;
+
+  @media only screen and (max-width: 560px) {
+    display: block;
+  }
 }
 

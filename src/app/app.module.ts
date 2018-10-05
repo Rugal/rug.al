@@ -4,7 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatButtonModule, MatSidenavModule, MatListModule } from '@angular/material';
+import { MatButtonModule, MatMenuModule, MatSidenavModule, MatListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BackgroundCoverComponent } from './background-cover/background-cover.component';
@@ -25,6 +25,7 @@ import { BodyComponent } from './body/body.component';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
+    MatMenuModule,
     MatSidenavModule,
     MatListModule
   ],
