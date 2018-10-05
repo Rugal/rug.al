@@ -1,7 +1,12 @@
+.fadein {
+  transition: opacity 2s ease-in;
+}
+
 mat-toolbar {
   background: none;
   color: #ffffff;
   justify-content: space-between;
+  transition: background-color 0.5s linear;
   position: fixed;
   z-index: 10;
 }
