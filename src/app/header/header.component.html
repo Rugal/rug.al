@@ -1,5 +1,6 @@
-<mat-toolbar>
-  <!--<div class="content">-->
+<mat-toolbar
+  (window:scroll)="onWindowScroll($event)"
+  [class.mat-primary]="this.colorHeader">
     <button mat-button>Rug.al</button>
     <nav class="nav">
       <button mat-button>About</button>
