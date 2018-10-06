@@ -1,14 +1,17 @@
-.fadein {
-  transition: opacity 2s ease-in;
-}
+$header-height: 64px;
+$small-screen: 599px;
 
 mat-toolbar {
   background: none;
   color: #ffffff;
   justify-content: space-between;
-  transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear, height 0.5s linear;
   position: fixed;
   z-index: 10;
+
+  @media only screen and (max-width: $small-screen) {
+    height: $header-height;
+  }
 }
 
 mat-toolbar > .mat-button {
@@ -18,7 +21,7 @@ mat-toolbar > .mat-button {
 nav {
   float: right;
 
-  @media only screen and (max-width: 560px) {
+  @media only screen and (max-width: $small-screen) {
     display: none;
   }
 }
@@ -26,7 +29,7 @@ nav {
 #header-burger {
   display: none;
 
-  @media only screen and (max-width: 560px) {
+  @media only screen and (max-width: $small-screen) {
     display: block;
   }
 }

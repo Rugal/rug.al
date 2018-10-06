@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  headerHeight: 64
+  headerHeight: 64,
+  headerFadeInBuffer: 12,
 };
 
 /*
