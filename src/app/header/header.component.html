@@ -1,9 +1,9 @@
 <mat-toolbar
      (window:scroll)="onWindowScroll($event)"
      [class.mat-primary]="this.colorHeader">
-  <button mat-button>Rug.al</button>
+  <button mat-button>Rugal</button>
   <nav>
-    <button mat-button>About</button>
+    <button mat-button href="#">About</button>
     <button mat-button>Category</button>
     <button mat-button>Tag</button>
     <button mat-button>Archive</button>
@@ -18,19 +18,19 @@
       color="primary"
       #menu="matMenu">
       <button mat-menu-item>
-        <mat-icon>dialpad</mat-icon>
+        <mat-icon>account_circle</mat-icon>
         <span>About</span>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>voicemail</mat-icon>
+      <button mat-menu-item>
+        <mat-icon>category</mat-icon>
         <span>Category</span>
       </button>
       <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
+        <mat-icon>clear_all</mat-icon>
         <span>Tag</span>
       </button>
       <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon>
+        <mat-icon>archive</mat-icon>
         <span>Archive</span>
       </button>
     </mat-menu>
