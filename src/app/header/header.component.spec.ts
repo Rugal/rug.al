@@ -1,4 +1,3 @@
-
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HeaderComponent } from './header.component';
@@ -10,7 +9,7 @@ describe('HeaderComponent', () => {
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
       imports: [MatSidenavModule],
-      declarations: [HeaderComponent]
+      declarations: [HeaderComponent],
     })
     .compileComponents();
 

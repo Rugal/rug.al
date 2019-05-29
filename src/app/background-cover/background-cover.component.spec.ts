@@ -8,7 +8,7 @@ describe('BackgroundCoverComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BackgroundCoverComponent ]
+      declarations: [BackgroundCoverComponent],
     })
     .compileComponents();
   }));
