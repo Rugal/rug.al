@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as Prism from 'prismjs';
 import 'prismjs/components/prism-json';
 
 import { environment } from '../../environments/environment';
@@ -16,7 +15,8 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() { }
 
-  private data = `{
+  language: string = 'json';
+  data: string = `{
   "first name": "Rugal",
   "last name": "Bernstein",
   "degree": "Master degree of Science",
@@ -28,34 +28,14 @@ export class BodyComponent implements OnInit {
     "linkedIn": "Yunheng Yao",
     "facebook": "Rugal Bernstein"
   },
-  "language": {
-    "nature language": [
-      "Chinese",
-      "English",
-      "Italiano"
-    ],
-    "programming language": [
-      "Java",
-      "C",
-      "Bash",
-      "Python",
-      "Clojure"
-    ],
-    "markup language": [
-      "Latex",
-      "Markdown",
-      "HTML"
-    ]
-  },
-  "interests": [
-    "AI"
-  ],
+  "natureLanguage": ["Chinese", "English", "Italiano"],
+  "programmingLanguage": ["Java", "C", "Bash", "Python", "Clojure"],
+  "markupLanguage": ["Latex", "Markdown", "HTML"]
+  "interests": ["AI"],
   "blog": "https://rug.al",
   "editor": "Vim",
   "ide": "Netbeans",
   "font": "Monaco",
   "motto": "Never yield to destiny!"
 }`;
-
-  private content = Prism.highlight(this.data, Prism.languages.json, 'json');
 }
