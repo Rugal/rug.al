@@ -1,5 +1,7 @@
 # Rug.al
 
+[![CircleCI](https://circleci.com/gh/Rugal/rug.al.svg?style=svg)](https://circleci.com/gh/Rugal/rug.al)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
 ## Development server

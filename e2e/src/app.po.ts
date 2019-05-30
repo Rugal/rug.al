@@ -5,7 +5,15 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getAppBody() {
+    return element(by.css('app-body')).isPresent();
+  }
+
+  getAppHeader() {
+    return element(by.css('app-header')).isPresent();
+  }
+
+  getBackgroundCover() {
+    return element(by.css('background-cover')).isPresent();
   }
 }

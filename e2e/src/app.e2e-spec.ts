@@ -7,8 +7,18 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should have header', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to angu!');
+    expect(page.getAppHeader()).toBeTruthy();
+  });
+
+  it('should have body', () => {
+    page.navigateTo();
+    expect(page.getAppBody()).toBeTruthy();
+  });
+
+  it('should have background cover', () => {
+    page.navigateTo();
+    expect(page.getBackgroundCover()).toBeTruthy();
   });
 });
