@@ -1,11 +1,16 @@
 $header-height: 64px;
 
 div {
-  box-sizing: border-box;
   background-color: #403838c4;
   height: 100%;
-  padding: $header-height 200px 16px 200px;
   position: absolute;
   top: 100%;
   width: 100%;
+}
+
+pre {
+  background-color: #000000a6;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: $header-height 25% 16px 25%;
 }

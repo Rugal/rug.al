@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as Prism from 'prismjs';
+import 'prismjs/components/prism-json';
 
 import { environment } from '../../environments/environment';
 
@@ -12,42 +14,48 @@ export class BodyComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  language='javascript';
+  private data = `{
+  "first name": "Rugal",
+  "last name": "Bernstein",
+  "degree": "Master degree of Science",
+  "contact": {
+    "qq": "359788955",
+    "github": "Rugal",
+    "stackOverflow": "Rugal",
+    "twitter": "@ryujinwrath",
+    "linkedIn": "Yunheng Yao",
+    "facebook": "Rugal Bernstein"
+  },
+  "language": {
+    "nature language": [
+      "Chinese",
+      "English",
+      "Italiano"
+    ],
+    "programming language": [
+      "Java",
+      "C",
+      "Bash",
+      "Python",
+      "Clojure"
+    ],
+    "markup language": [
+      "Latex",
+      "Markdown",
+      "HTML"
+    ]
+  },
+  "interests": [
+    "AI"
+  ],
+  "blog": "https://rug.al",
+  "editor": "Vim",
+  "ide": "Netbeans",
+  "font": "Monaco",
+  "motto": "Never yield to destiny!"
+}`;
 
-  content = `{
-    "Author" :
-    {
-        "First name": "Rugal",
-        "Family name": "Bernstein",
-        "Location":"Windsor, Ontario, Canada",
-        "Degree":"Master degree of Science",
-        "Major":"Applied Computing",
-        "University":"University of Windsor",
-        "QQ" : "359788955",
-        "Github" : "Rugal",
-        "StackOverflow" : "Rugal",
-        "Twitter" : "@ryujinwrath",
-        "LinkedIn" : "Yunheng Yao",
-        "Facebook" : "Rugal Bernstein",
-        "Gmail" : "ryujinwrath",
-        "Nature language":["Chinese","English","Italiano"],
-        "Programming language":["Java","C","Bash","Clojure","Matlab"],
-        "Markup language":["Latex","Markdown","HTML"],
-    },
-    "Recent plan":"Gracker",
-    "Blog": "https://rug.al",
-    "Editor": "Vim",
-    "IDE": "Netbeans",
-    "Font": "HeyMono(Monaco)",
-    "Community":["PostgreSQL","Hadoop"],
-    "Interests":["Database System","Artificial Intelligence"],
-    "Certificate":"Oracle Certified Professional 12C",
-    "Expert":["Java","C","Linux","Oracle","Bash","Mysql"],
-    "Familiar":["Hadoop","PostgreSQL","Clojure","Matlab","Latex"],
-    "Learning":["Artificial Intellegence","Machine Learning"],
-    "Motto":"Never yield to destiny!"
-}`
+  private content = Prism.highlight(this.data, Prism.languages.json, 'json');
 }
